@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+header {
+    width: 100%;
+    height: 130px;
+    /* border: 1px solid red; */
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+/* Header Onscroll */
+
+.fixed {
+    position: fixed;
+    top: 0;
+    transition: 2s;
+    animation: fixed 1s;
+}
+
+/* Finish */
+
+.inftech-logo {
+    width: 25%;
+    height: 100%;
+    padding: 42px 80px;
+    background-color: white;
+    /* display: none; */
+    background-color: #1d1729;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.for-other-items {
+    width: 75%;
+    height: 100%;
+    background-color: white;
+    /* display: none; */
+    /* border: 1px solid green; */
+}
+
+.title-and-icons {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #cecece;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    width: 80%;
+    height: 40px;
+    opacity: 0.9;
+    padding: 10px;
+    padding-left: 40px;
+    font-size: 12px;
+    color: #6c6a72;
+
+}
+
+.icons {
+    width: 20%;
+    height: 40px;
+    /* border: 1px solid red; */
+    background-color: #f4f2f9;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.block-for-icons {
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid red; */
+}
+
+svg {
+    fill: #6c6a72;
+}
+
+.for-dropdown-and-tel {
+    width: 100%;
+    height: 89px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.for-dropdown {
+    width: 55%;
+    height: 59px;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 15px;
+}
+
+.for-dropdown-icons {
+    width: 15%;
+    height: 59px;
+    border-right: 1px solid #cecece;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    display: flex;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.dropdown {
+    width: 90%;
+    height: 30px;
+    /* border: 1px solid black; */
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.items {
+    height: 55px;
+    color: #6c6a72;
+    font-size: 13px;
+    margin-left: 10px;
+    list-style-type: none;
+    border-bottom: 1px solid #6c6a72;
+    border-bottom-width: 0;
+    cursor: pointer;
+}
+
+.items {
+    transition: 2s;
+}
+
+.icons-dropdown {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    margin-left: 30px;
+}
+
+.for-tel {
+    width: 27%;
+    height: 89px;
+    /* border: 1px solid red; */
+    padding: 15px;
+    padding-left: 30px;
+    display: flex;
+}
+
+.tel-icon {
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid black; */
+    background-color: #5f2dee;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+#Capa_1 {
+    fill: white;
+}
+
+.info {
+    width: 200px;
+    height: 59px;
+    /* border: 1px solid red; */
+    margin-left: 10px;
+}
+
+.call-anytime {
+    color: #6c6a72;
+    font-size: 12px;
+}
+
+.number {
+    color: black;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.home-item {
+    width: 200px;
+    background-color: white;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 150px;
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: none;
+    transition: 2s;
+}
+
+.blockList {
+    display: block;
+}
+
+.home-item-items {
+    width: 100%;
+    height: 50px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 15px;
+    border-bottom: 1px solid #cecece
+}
+
+.home-item-items:hover {
+    transition: 0.5s;
+    color: white;
+    background-color: #404040;
+}
+
+.pages-item {
+    width: 200px;
+    background-color: white;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 150px;
+    display: none;
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: 2s;
+}
+
+.pageList {
+    display: block;
+}
+
+.services-item {
+    width: 200px;
+    background-color: white;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 150px;
+    display: none;
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: 2s;
+}
+
+.serviceList {
+    display: block;
+}
+
+.projects-item {
+    width: 200px;
+    background-color: white;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 150px;
+    display: none;
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: 2s;
+}
+
+.projectList {
+    display: block;
+}
+
+.blog-item {
+    width: 200px;
+    background-color: white;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 150px;
+    display: none;
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: 2s;
+}
+
+.blogList {
+    display: block;
+}
+
+.block-for-search {
+    width: 100%;
+    height: 100vh;
+    opacity: 0.9;
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    margin-top: -700px;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation-name: search-menu;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.close-window {
+    width: 20px;
+    height: 20px;
+    margin-left: 95%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: #6c6a72;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.bottom-icon {
+    width: 0;
+    height: 70px;
+    background-color: #b882fc;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    cursor: pointer;
+    animation-name: arrow-width;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+.bottom-icon > svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.search-block {
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid red; */
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-here {
+    width: 0;
+    height: 80px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: black;
+    font-weight: bolder;
+    animation-name: search-width;
+    animation-duration: 1s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+.search-icon {
+    cursor: pointer;
+    width: 0;
+    position: relative;
+    right: 20px;
+    top: 30px;
+}
+
+.main {
+    width: 100%;
+    height: 1000px;
+    margin-top: -5px;
+    position: relative;
+    z-index: 1;
+    /* border: 1px solid red; */
+}
+
+.container-one {
+    width: 100%;
+    height: 900px;
+    /* border: 1px solid black; */
+}
+
+.container-one > img {
+    width: 170%;
+    margin-left: -45%;
+    /* height: 100%; */
+    overflow: hidden;
+}
+
+.left-button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 500px;
+    left: 90%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.left-button > svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+.right-button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 420px;
+    left: 90%;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.right-button > svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+.left-button:hover {
+    border-color: #5f2dee;
+    transition: 0.5s;
+}
+
+.left-button:hover svg {
+    fill: #5f2dee;
+    transition: 0.5s;
+}
+
+.right-button:hover {
+    border-color: #5f2dee;
+    transition: 0.5s;
+}
+
+.right-button:hover svg {
+    fill: #5f2dee;
+    transition: 0.5s;
+}
+
+
+/* FOR MEDIA */
+
+.media-block-for-logo {
+    width: 100%;
+    height: 55px;
+    border: 1px solid red;
+    display: none;
+}
+
+.media-inftech-logo {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    background-color: #1d1729;
+    padding-top: 5px;
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+}
+
+.media-inftech-logo > img {
+    width: 160px;
+    height: 40px;
+}
+
+ .media-for-dropdown {
+    width: 100%;
+    height: 73px;
+    border: 1px solid black;
+    display: none;
+    /* display: flex; */
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+} 
+
+/* FINISH */

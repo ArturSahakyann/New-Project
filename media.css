@@ -1,0 +1,28 @@
+@media only screen and (max-width: 600px) {
+
+    header {
+        width: 600px;
+        display: block;
+    }
+
+    .inftech-logo {
+        display: none;
+    }
+
+    .for-other-items {
+        display: none;
+    }
+
+    .media-block-for-logo {
+        display: block;
+    }
+
+    .media-inftech-logo {
+        display: flex;
+    }
+
+    .media-for-dropdown {
+        display: flex;
+    }
+    
+}
